@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(297.04deg, #181A1E 13.34%, #191B1C 86.52%);
+}
+html,
+body {
+  height: 100%;
+}
+.input-cal {
+    background: linear-gradient(180deg, #131313 0%, #131313 100%);
+      border-radius: 21px;
+  height: 600px;
+  padding: 20px;
+  width: 90%;
+  align-self: center;
+}
+.main-section {
+  min-height: 100%;
+  display: flex;
+}
+.R1 {
+  display: flex;
+  justify-content: center;
+}
+.C1 {
+  align-self: center;
+}
+.Previous,
+.Now-reading,
+.Sector,
+.Service {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  align-self: center;
+}
+.input-label {
+  text-align: center;
+  color: #ab4b47;
+  width: 100%;
+  font-family: "Secular One", sans-serif;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.submit button {
+  background: linear-gradient(90deg, #b75a55 25.47%, #d44841 50%);
+  padding: 5px;
+  width: 220px;
+  border: none !important;
+  cursor: pointer;
+  color: #201e1e;
+  font-size: 16px;
+}
+.input-label h4 {
+  padding: 5px;
+  font-size: 25px;
+}
+.input-label input,.sector-option {
+  background: #161616;
+  border: 1px solid #424242;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 5px;
+  width: 70%;
+  color: white;
+}
+input[type="checkbox"] {
+  width: 30px;
+}
+.input-wrap {
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.title{
+    margin-top: 15px;
+}
+.title h1 {
+  color: white;
+  font-size: 25px;
+  font-family: "Secular One", sans-serif;
+}
+.info-label {
+  color: #ab4b47;
+  padding: 20px;
+  font-family: "Secular One", sans-serif;
+ 
+}
+.info-label h4 {
+  font-size: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.label2 input {
+  background: #242629;
+  border: 2px solid #121111;
+  border-radius: 6px;
+  padding: 5px;
+}
+@media screen and (max-width: 1000px) {
+    .info-label{
+        display: flex;
+        justify-content: center;
+    }
+    .title{
+        margin-top: 15px;
+    }
+    .title h1 {
+        text-align: center;
+      }
+  }
+  input:focus {
+    outline: none !important;
+    border:1px solid #ab4b47 !important;
+    box-shadow: 0 0 10px #ab4b47 !important;
+  }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fitness Calculator</title>
+    <link rel="stylesheet" href="./Calcpage.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="container C1">
+        <div class="row R1">
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="input-wrap">
+              <div class="input-cal">
+                <div class="logo"></div>
+                <div class="Previous">
+                  <label class="input-label">
+                    <h4>Previous reading</h4>
+                    <input />
+                  </label>
+                </div>
+                <div class="Now-reading">
+                  <label class="input-label">
+                    <h4>Now reading</h4>
+                    <input />
+                  </label>
+                </div>
+                <div class="Sector">
+                  <label class="input-label">
+                    <h4>Sector</h4>
+                    <select class="sector-option">
+                      <option></option>
+                      <option>household</option>
+                      <option>commercial</option>
+                    </select>
+                    
+                  </label>
+                </div>
+                <div class="Service">
+                  <label class="input-label">
+                    <h4>Service counter?</h4>
+                    Yes
+                    <input type="checkbox" />
+                    No
+                    <input type="checkbox" />
+                  </label>
+                </div>
+                <div class="submit">
+                  <button>Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="title">
+              <h1>All information about this counter</h1>
+            </div>
+            <div class="info">
+              <div class="info-label">
+                <label class="label2">
+                  <h4>Finall bill </h4>
+                  <input readonly>
+                </label>
+              </div>
+              <div class="info-label">
+                <label class="label2">
+                  <h4>Consumed watts</h4>
+                  <input readonly>
+                </label>
+              </div>
+              <div class="info-label">
+                <label class="label2">
+                  <h4>watts per day</h4>
+                  <input readonly >
+                </label>
+              </div>
+              <div class="info-label">
+                <label class="label2">
+                  <h4>Consumption value</h4>
+                  <input readonly>
+                </label>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  </body>
+</html>
