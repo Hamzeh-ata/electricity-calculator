@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Fitness Calculator</title>
+    <title>elec Calculator</title>
     <link rel="stylesheet" href="./Calcpage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -22,37 +23,36 @@
                 <div class="Previous">
                   <label class="input-label">
                     <h4>Previous reading</h4>
-                    <input />
+                    <input id="prev-read" />
                   </label>
                 </div>
                 <div class="Now-reading">
                   <label class="input-label">
                     <h4>Now reading</h4>
-                    <input />
+                    <input id="now-read" />
                   </label>
                 </div>
                 <div class="Sector">
                   <label class="input-label">
                     <h4>Sector</h4>
-                    <select class="sector-option">
-                      <option></option>
-                      <option>household</option>
-                      <option>commercial</option>
+                    <select class="sector-option" id="select" >
+                      <option value="0"></option>
+                      <option value="1">household</option>
+                      <option value="2">commercial</option>
                     </select>
-                    
                   </label>
                 </div>
                 <div class="Service">
                   <label class="input-label">
                     <h4>Service counter?</h4>
                     Yes
-                    <input type="checkbox" />
+                    <input type="radio" id="Service" name="Service" value="1"/>
                     No
-                    <input type="checkbox" />
+                    <input type="radio" id="notService" name="Service" value="2" />
                   </label>
                 </div>
                 <div class="submit">
-                  <button>Submit</button>
+                  <button id="submit-button">Submit</button>
                 </div>
               </div>
             </div>
@@ -65,13 +65,13 @@
               <div class="info-label">
                 <label class="label2">
                   <h4>Finall bill </h4>
-                  <input readonly>
+                  <input readonly id="finallBill">
                 </label>
               </div>
               <div class="info-label">
                 <label class="label2">
                   <h4>Consumed watts</h4>
-                  <input readonly>
+                  <input readonly id="Consumed">
                 </label>
               </div>
               <div class="info-label">
@@ -94,4 +94,5 @@
     </section>
  
   </body>
+  <script src="./calcpage.js"></script>
 </html>

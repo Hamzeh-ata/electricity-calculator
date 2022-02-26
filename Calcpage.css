@@ -41,7 +41,7 @@ body {
 }
 .input-label {
   text-align: center;
-  color: #ab4b47;
+  color: #2F9F85;
   width: 100%;
   font-family: "Secular One", sans-serif;
 }
@@ -51,7 +51,9 @@ body {
   padding: 20px;
 }
 .submit button {
-  background: linear-gradient(90deg, #b75a55 25.47%, #d44841 50%);
+  background: linear-gradient(90deg, #1EB780
+  25.47%, #1EB780
+  50%);
   padding: 5px;
   width: 220px;
   border: none !important;
@@ -72,7 +74,7 @@ body {
   width: 70%;
   color: white;
 }
-input[type="checkbox"] {
+input[type="radio"] {
   width: 30px;
 }
 .input-wrap {
@@ -90,7 +92,7 @@ input[type="checkbox"] {
   font-family: "Secular One", sans-serif;
 }
 .info-label {
-  color: #ab4b47;
+  color: #2F9F85;
   padding: 20px;
   font-family: "Secular One", sans-serif;
  
@@ -105,6 +107,9 @@ input[type="checkbox"] {
   border: 2px solid #121111;
   border-radius: 6px;
   padding: 5px;
+  color: #b7afaf;
+text-align: center;
+font-size: 17px;
 }
 @media screen and (max-width: 1000px) {
     .info-label{
@@ -120,6 +125,8 @@ input[type="checkbox"] {
   }
   input:focus {
     outline: none !important;
-    border:1px solid #ab4b47 !important;
-    box-shadow: 0 0 10px #ab4b47 !important;
+    border:1px solid #1EB780
+    !important;
+    box-shadow: 0 0 10px #1EB780
+    !important;
   }
