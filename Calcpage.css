@@ -4,6 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background: linear-gradient(297.04deg, #181A1E 13.34%, #191B1C 86.52%);
 }
 html,
