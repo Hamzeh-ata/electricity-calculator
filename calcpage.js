@@ -1,20 +1,31 @@
-var prevRead,nowRead,sector,service,submit,fixedPrices,consumedWatts,reef,zeros,zerostemp1,reefValue,counterFee,TVFee,wasteFee,wasteFeeM,finalBill,ConsumptionValue;
+var prevRead,nowRead,sector,service,submit,fixedPrices,consumedWatts,reef,zeros,zerostemp1,reefValue,counterFee,TVFee,wasteFee,wasteFeeM,finalBill,ConsumptionValue,ServiceDays,serviceDayCalc;
 counterFee=200;
 TVFee=1000;
 zeros=1;
 $("#submit-button").click(function(){
 prevRead=$("#prev-read").val();
 nowRead=$("#now-read").val();
+ServiceDays=$("#Service-days").val();
 sector=$("#select").find(":selected").text();
 /*if($("#select").val()==1){
 };*/
 service=$('input[name=Service]:checked').val();
+//CreateElements();
+$("#col2").show();
 consumedWatts=nowRead-prevRead;
+serviceDayCalc=consumedWatts/ServiceDays;
+if(ServiceDays.length==0||ServiceDays<=0){
+    serviceDayCalc=0;
+}
+$("#wattsDay").val(serviceDayCalc.toFixed(2));
 $("#Consumed").val(consumedWatts);
 countrySideCalc(consumedWatts);
 fixedPrices=TVFee+counterFee+reefValue;
 wasteFeeCalc(consumedWatts);
 ConsumptionCalc(consumedWatts);
+if(service==1){
+    wasteFee=0;
+}
 finalBill=fixedPrices+wasteFee+ConsumptionValue;
 $("#finallBill").val(finalBill/1000);
 $("#Consumption-value").val(ConsumptionValue/1000);
@@ -91,3 +102,10 @@ function ConsumptionCalc(Watts){
 
     }
 }
+/*function CreateElements (){
+    $("#R1").append('<div class="col-sm-6 col-md-12 col-lg-6" id="col2"><div class="title"><h1>All information about this counter</h1></div></div>');
+    $("#col2").append('<div class="info"><div class="info-label"><label class="label2"><h4>Finall bill </h4><input readonly id="finallBill"></label></div></div>');
+    $("#col2").append('<div class="info"><div class="info-label"><label class="label2"><h4>Consumed watts </h4><input readonly id="Consumed"></label></div></div>');
+    $("#col2").append('<div class="info"><div class="info-label"><label class="label2"><h4>Watts per day</h4><input readonly id="wattsDay"></label></div></div>');
+    $("#col2").append('<div class="info"><div class="info-label"><label class="label2"><h4>Consumption value</h4><input readonly id="Consumption-value"></label></div></div>');
+}*/

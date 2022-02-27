@@ -14,8 +14,7 @@ body {
 .input-cal {
     background: linear-gradient(180deg, #131313 0%, #131313 100%);
       border-radius: 21px;
-  height: 600px;
-  padding: 20px;
+  padding: 10px;
   width: 90%;
   align-self: center;
 }
@@ -129,4 +128,7 @@ font-size: 17px;
     !important;
     box-shadow: 0 0 10px #1EB780
     !important;
+  }
+  #col2{
+    display: none;
   }
