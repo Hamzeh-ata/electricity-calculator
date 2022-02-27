@@ -85,8 +85,8 @@ function ConsumptionCalc(Watts){
         ConsumptionValue=(160*33)+(140*72)+(200*86)+(100*114)+(150*158)+((Watts-750)*188);
         console.log("Watts" + ConsumptionValue);
     }
-    else if (Watts<1000){
-        ConsumptionValue=(160*33)+(140*72)+(200*86)+(100*114)+(150*158)+(251*265)+((Watts-1000)*265);
+    else if (Watts>1000){
+        ConsumptionValue=(160*33)+(140*72)+(200*86)+(100*114)+(150*158)+(250*188)+((Watts-1000)*265);
         console.log("Watts" + ConsumptionValue);
 
     }
